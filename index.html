@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory System</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Inventory Tracker</h1>
+      <hr />
+      <form id="item-form">
+        <input class="name" type="text" name="name" placeholder="Name" />
+        <input class="amount" type="text" name="amount" placeholder="Amount" />
+        <button type="submit" name="submit" value="submit">Add</button>
+      </form>
+
+      <ul id="inventory-list">
+        <li class="initial-item">
+          <span>Sony XR Television</span>
+          <span> - </span>
+          <span>6</span>
+          <button>edit</button>
+          <button>remove</button>
+          <button>select</button>
+        </li>
+      </ul>
+
+      <hr />
+
+      <div class="warehouse">
+        <h3>Warehouses:</h3>
+        <form id="warehouse-form">
+          <input
+            class="warehouse-name"
+            type="text"
+            name="name"
+            placeholder="Warehouse Name"
+          />
+          <button type="submit" name="add" value="add">Add</button>
+        </form>
+
+        <ul class="warehouse-list">
+          <br />
+          <div class="initial-warehouse">
+            <p>Warehouse 1</p>
+            <button>Add Selected Item to Warehouse</button>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
